@@ -51,4 +51,15 @@ int main()
     }
     
     std::cout << violations << std::endl;
+
+    for (int i = 0; i < x; i++)
+    {
+        delete[] work_together[i];
+    }
+    delete[] work_together;
+    for (int i = 0; i < y; i++)
+    {
+        delete[] work_apart[i];
+    }
+    delete[] work_apart;
 }
